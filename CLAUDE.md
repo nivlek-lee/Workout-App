@@ -27,6 +27,38 @@ I have no coding background. Treat every explanation as if I am hearing about it
 - Must also work on desktop.
 - Keep the number of screens and buttons small. Simple is better.
 
+## App Blueprint
+
+### Screens
+1. **Home** — shows today's gym day exercises, with last recorded weight and reps for each
+2. **Log Workout** — log each set one at a time as you finish it (exercise, weight, reps)
+3. **Plan Next Session** — at the end of a session, pick which exercises to do next time. No targets, just a loose plan.
+4. **Progress** — weight over time per exercise, clean and visual
+5. **Calendar** — marks every day Kelvin was active: gym, badminton, yoga, pilates, spinning
+6. **Exercise Library** — full list organized by category (upper, lower, cardio, core)
+
+### Gym Schedule
+- Gym days: Sunday, Tuesday, Thursday
+- Format: full body (2 lower, 2 upper, cardio, core)
+- Other days: activities like badminton, yoga, pilates, spinning — logged on calendar as done, no detailed tracking
+
+### Exercise Library
+- **Upper:** Incline chest press (dumbbells), chest press (barbell), chest flies, lat pulldowns, bicep curls, shoulder press, single arm dumbbell rows, pull ups, tricep dips
+- **Lower:** Leg press, barbell squats, RDL, deadlifts, Bulgarian split squats, leg lifts, leg curls
+- **Cardio:** Incline walk (11% incline, 4-5 km/h)
+- **Core:** Plank (1 min x 3, 1 min rest between)
+
+### What Gets Tracked Per Set
+- Exercise name
+- Weight (kg)
+- Reps
+- Date
+
+### Goals
+- Kelvin is building lean strength: low reps, high weight
+- Progress screen should make weight increases immediately visible and motivating
+- No targets or prescribed weights — Kelvin trains by feel
+
 ## Tech Decisions (Do Not Change Without Asking)
 - Plain HTML, CSS, and JavaScript only. No complex frameworks unless we decide together.
 - Data saved in the browser (localStorage) until we decide to upgrade.
